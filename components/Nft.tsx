@@ -46,7 +46,7 @@ const Nft = ({ nft }: { nft: NFT }) => {
       <div>
         <h2>{nft?.name}</h2>
         <p>{nft?.description}</p>
-        <p>{nft?.price} ETH</p>
+        <p>{nft?.price} {process.env.CURRENCY}</p>
       </div>
 
       {loading ? (
